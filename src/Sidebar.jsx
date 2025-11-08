@@ -1,4 +1,4 @@
-import { Box, List, ListItemButton, ListItemText, Collapse, Typography} from "@mui/material";
+import { Box, List, ListItemButton, ListItemText, Collapse } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import logo from "./assets/image 1.png";
 import { NavLink, useLocation } from "react-router-dom";
@@ -24,7 +24,6 @@ function Sidebar() {
   const location = useLocation();
   const [emailOpen, setEmailOpen] = useState(false);
 
-  // Auto-open menu if current route matches any child
   useEffect(() => {
     if (location.pathname.startsWith("/mailbox")) {
       setEmailOpen(true);
@@ -73,7 +72,7 @@ function Sidebar() {
                             sx={{
                               ml: 3,
                               mr: 3,
-                              pr: 10, 
+                              pr: 10,
                               mb: 1,
                               borderRadius: "6px",
                               backgroundColor: isActive
@@ -111,14 +110,19 @@ function Sidebar() {
                     color: isActive ? "#00BD7E" : "inherit"
                   }}
                 >
-                  <ListItemText primary={item.label} sx={{color: isActive? "inherit": "#b4b4b4"}}/>
+                  <ListItemText primary={item.label} sx={{ color: isActive ? "inherit" : "#b4b4b4" }} />
                 </ListItemButton>
               )}
             </NavLink>
           );
         })}
 
-        <Typography sx={{ mt: 45, pl: 4 }}>Log Out</Typography>
+        <ListItemButton sx={{
+          mt: 44,
+          height: 44,
+          borderRadius: "6px",
+          borderLeft: "4px solid #00BD7E",
+        }}>Log Out</ListItemButton>
       </List>
     </Box>
   );
