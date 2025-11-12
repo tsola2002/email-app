@@ -48,4 +48,3 @@ function Mailboxes() {
 }
 
 export default Mailboxes
- 

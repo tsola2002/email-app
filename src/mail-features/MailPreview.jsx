@@ -11,4 +11,4 @@ function MailPreview({ content }) {
   )
 }
 
-export default MailPreview 
+export default MailPreview

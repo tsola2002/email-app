@@ -39,7 +39,7 @@ function Sidebar() {
         {menuItems.map((item) => {
           if (item.children) {
             const isParentActive = item.children.some((child) =>
-              location.pathname.startsWith(child.path) 
+              location.pathname.startsWith(child.path)
             );
 
             return (
