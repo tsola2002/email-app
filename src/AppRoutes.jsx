@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Mailbox1 from "./MailBox1";
 import Mailboxes from "./Mailboxes";
+import ManualRespond from "./ManualRespond";
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
 // … your other pages
@@ -9,6 +10,9 @@ export default function AppRoutes() {
   return (
     <Routes>
       <Route path="/mailbox1" element={<Mailbox1 />} />
+      <Route path="/manualrespond" element={<ManualRespond/>} />
+      {/* <Route path="/mailbox1" element={<Maunally_resp/>}/> */}
+
       <Route path="/mailboxes" element={<Mailboxes />} />
       {/* <Route path="/mailbox2" element={<Mailbox2 />} /> 
 
