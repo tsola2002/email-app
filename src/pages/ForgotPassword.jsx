@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Box, Typography, TextField, Button } from "@mui/material";
 import topArt from "../assets/img1.png";
@@ -72,9 +70,9 @@ export default function ForgotPassword() {
           width: { xs: "100%", md: "50%" },
           display: "flex",
           justifyContent: "center",
-          alignItems: "center",
+          alignItems: "flex-start",
           px: 4,
-          py: { xs: 6, md: 0 }, // spacing for mobile
+          py: { xs: 4, md: 6 },
         }}
       >
         <Box sx={{ width: "100%", maxWidth: "400px", textAlign: "center" }}>
