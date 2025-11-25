@@ -6,6 +6,7 @@ import EmailDashboard from "./components/EmailDashboard";
 import LoginPage from "./pages/LoginPage";
 import Companyview2 from "./companyview2";
 import ForgotPassword from "./pages/forgotPassword";
+import CouldNotRespond from "./couldNotRespond";
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
@@ -23,6 +24,7 @@ export default function AppRoutes() {
 
       <Route path="/mailboxes" element={<Mailboxes />} />
       <Route path="/email" element={<EmailDashboard />} />
+      <Route path="/couldnotrespond" element={<CouldNotRespond/>}/>
       <Route path="/email" element={<Companyview2 />} />
 
       {/* <Route path="/mailbox2" element={<Mailbox2 />} /> 
