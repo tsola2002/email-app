@@ -4,6 +4,7 @@ import Mailboxes from "./Mailboxes";
 import ManualRespond from "./ManualRespond";
 import EmailDashboard from "./components/EmailDashboard";
 import LoginPage from "./pages/LoginPage";
+import ForgotPassword from "./pages/forgotPassword";
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
@@ -12,7 +13,9 @@ import LoginPage from "./pages/LoginPage";
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/test-login" element={<LoginPage />} />
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+
       <Route path="/mailbox1" element={<Mailbox1 />} />
       <Route path="/manualrespond" element={<ManualRespond/>} />
       {/* <Route path="/mailbox1" element={<Maunally_resp/>}/> */}
