@@ -14,6 +14,7 @@ export default function LoginPage() {
       {/* Left Side */}
       <Box sx={{ width: "50%" }}>
         <LeftPanel />
+        
       </Box>
 
       {/* Right Side */}

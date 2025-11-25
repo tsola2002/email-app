@@ -4,6 +4,8 @@ import Mailboxes from "./Mailboxes";
 import ManualRespond from "./ManualRespond";
 import EmailDashboard from "./components/EmailDashboard";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
@@ -12,6 +14,7 @@ import LoginPage from "./pages/LoginPage";
 export default function AppRoutes() {
   return (
     <Routes>
+      <Route path="/register" element={<RegisterPage />} />
       <Route path="/test-login" element={<LoginPage />} />
       <Route path="/mailbox1" element={<Mailbox1 />} />
       <Route path="/manualrespond" element={<ManualRespond/>} />
