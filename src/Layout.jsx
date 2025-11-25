@@ -21,14 +21,16 @@ export default function Layout() {
     "/email": "E-Mail",
     "/mailbox1": "Mailbox 1",
     "/mailbox2": "Mailbox 2",
+     "/manualrespond": "Manual Respond To",
     "/users": "User List",
     "/companies": "Companies",
-    "/mailboxes": "Mailboxes",
+    "/mailboxes":
+     "Mailboxes",
     "/blocked": "Blocked E-Mail"
   };
 
   const location = useLocation();
-  const PageHeader = pageTitles[location.pathname] || "Dashboard"
+  const PageHeader = pageTitles[location.pathname] || "DASHBOARD ";
 
   return (
     <Box sx={{ display: "flex" }}>
