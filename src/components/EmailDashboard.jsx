@@ -52,14 +52,14 @@ export default function EmailDashboard() {
       {/* 👇 Your Sidebar component plugged in */}
       <Box
         sx={{
-          width: 250,
+          width: 0,
           borderRight: "1px solid #e0e0e0",
           bgcolor: "#fff",
           display: "flex",
           flexDirection: "column",
         }}
       >
-        <Sidebar />
+        {/* <Sidebar /> */}
       </Box>
 
       {/* Main Section */}

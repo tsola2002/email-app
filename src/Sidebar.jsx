@@ -10,6 +10,7 @@ const menuItems = [
     label: "E-Mail",
     path: "/email",
     children: [
+      {label: "Sales", path: "/sales"},
       { label: "Mailbox 1", path: "/mailbox1" },
       { label: "Mailbox 2", path: "/mailbox2" },
       {label: "ManualRespond", path:"/manualRespond"},

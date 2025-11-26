@@ -27,7 +27,7 @@ export default function AppRoutes() {
 
       <Route path="/mailboxes" element={<Mailboxes />} />
       <Route path="/companies" element={<Companies />} />
-      <Route path="/email" element={<EmailDashboard />} />
+      <Route path="/sales" element={<EmailDashboard />} />
       <Route path="/email" element={<Companyview2 />} />
       <Route path="/users" element={<UserListContent/>} />
 
