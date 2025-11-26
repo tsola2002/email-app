@@ -1,36 +1,42 @@
-// src/components/Layout.jsx
-import React, { useState } from "react";
-import { Box, Drawer, AppBar, Toolbar, IconButton, Typography, Avatar } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
-import { useTheme } from "@mui/material/styles";
-import Sidebar from "./Sidebar";
-import AppRoutes from "./AppRoutes";
-import { useLocation } from "react-router-dom";
+"use client"
 
-const drawerWidth = 240;
+import { useState } from "react"
+import { useTheme } from "@mui/material/styles"
+import { useLocation } from "react-router-dom"
+import Box from "@mui/material/Box"
+import AppBar from "@mui/material/AppBar"
+import Toolbar from "@mui/material/Toolbar"
+import IconButton from "@mui/material/IconButton"
+import MenuIcon from "@mui/icons-material/Menu"
+import Typography from "@mui/material/Typography"
+import Avatar from "@mui/material/Avatar"
+import Drawer from "@mui/material/Drawer"
+import Sidebar from "./Sidebar"
+import AppRoutes from "./AppRoutes"
+
+const drawerWidth = 240
 
 export default function Layout() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const theme = useTheme(); 
+  const [mobileOpen, setMobileOpen] = useState(false)
+  const theme = useTheme()
+  const location = useLocation()
 
   const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    setMobileOpen(!mobileOpen)
+  }
 
   const pageTitles = {
     "/email": "E-Mail",
     "/mailbox1": "Mailbox 1",
     "/mailbox2": "Mailbox 2",
-     "/manualrespond": "Manual Respond To",
+    "/manualrespond": "Manual Respond To",
     "/users": "User List",
     "/companies": "Companies",
-    "/mailboxes":
-     "Mailboxes",
-    "/blocked": "Blocked E-Mail"
-  };
+    "/mailboxes": "Mailboxes",
+    "/blocked": "Blocked E-Mail",
+  }
 
-  const location = useLocation();
-  const PageHeader = pageTitles[location.pathname] || "DASHBOARD ";
+  const PageHeader = pageTitles[location.pathname] || "DASHBOARD"
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -47,14 +53,12 @@ export default function Layout() {
         }}
       >
         <Toolbar>
-          <IconButton
-            onClick={handleDrawerToggle}
-            sx={{ display: { md: "none" }, mr: 2 }}
-          >
-
+          <IconButton onClick={handleDrawerToggle} sx={{ display: { md: "none" }, mr: 2 }}>
             <MenuIcon />
           </IconButton>
-          <Typography variant="h5" sx={{ fontWeight: 'bold' }}>{PageHeader}</Typography>
+          <Typography variant="h5" sx={{ fontWeight: "bold" }}>
+            {PageHeader}
+          </Typography>
           <Box sx={{ ml: "auto", display: "flex" }}>
             <Avatar />
             <Box sx={{ ml: 1 }}>
@@ -70,11 +74,7 @@ export default function Layout() {
       </AppBar>
 
       {/* ✅ SIDEBAR */}
-      <Box
-        component="nav"
-        sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }}
-      >
-
+      <Box component="nav" sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }}>
         {/* Mobile Drawer (temporary) */}
         <Drawer
           variant="temporary"
@@ -86,7 +86,6 @@ export default function Layout() {
             "& .MuiDrawer-paper": { width: drawerWidth },
           }}
         >
-
           <Sidebar />
         </Drawer>
 
@@ -107,12 +106,9 @@ export default function Layout() {
       </Box>
 
       {/* ✅ MAIN CONTENT */}
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, mt: 10 }}
-      >
+      <Box component="main" sx={{ flexGrow: 1, mt: 10 }}>
         <AppRoutes />
       </Box>
     </Box>
-  );
-};
+  )
+}

@@ -78,6 +78,7 @@ export default function LoginForm() {
           fullWidth
           type="submit"
           variant="contained"
+          href="/admin"
           sx={{
             mt: 3,
             py: 1.3,

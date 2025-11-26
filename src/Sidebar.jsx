@@ -14,7 +14,8 @@ const menuItems = [
       { label: "Mailbox 1", path: "/mailbox1" },
       { label: "Mailbox 2", path: "/mailbox2" },
       {label: "ManualRespond", path:"/manualRespond"},
-      {label: "CouldNotRespond", path:"/couldNotRespond"}
+      {label: "CouldNotRespond", path:"/couldNotRespond"},
+      { label: "AutoRespond", path: "/autorespond" }
     ]
   },
   { label: "User List", path: "/users" },
