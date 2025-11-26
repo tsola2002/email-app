@@ -12,7 +12,8 @@ const menuItems = [
     children: [
       { label: "Mailbox 1", path: "/mailbox1" },
       { label: "Mailbox 2", path: "/mailbox2" },
-      {label: "ManualRespond", path:"/manualRespond"}
+      {label: "ManualRespond", path:"/manualRespond"},
+      {label: "CouldNotRespond", path:"/couldNotRespond"}
     ]
   },
   { label: "User List", path: "/users" },
