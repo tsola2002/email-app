@@ -21,13 +21,18 @@ export default function EmailPage() {
         <div style={styles.menu}>
           {/* Email dropdown */}
           <div style={styles.menuHeader}>
-            <span style={styles.icon}>📧</span>
-            <span styles={ {justifyContent:"space-between"}}>E-Mail </span>
-            <span  style={styles.column}>^</span>
-          </div>
+  <span style={styles.left}>
+    ✉️ E-mail
+  </span>
 
-          <div style={styles.menuItemActive}>Mailbox 1</div>
-          <div style={styles.menuItem}>Mailbox 2</div>
+  <span style={styles.right}>
+    ^
+  </span>
+</div>
+<div style={{marginLeft:"40px", color:"green"}}>
+         <div style={styles.menuItemActive}>Mailbox 1</div>
+          <div style={styles.menuTem}>Mailbox 2</div>
+          </div>
 
           <br />
 
@@ -55,21 +60,8 @@ export default function EmailPage() {
       <div style={styles.content}>
 
         {/* Header */}
-        <h2 style={styles.header}></h2>
-         <div style={styles.longS}>
-      {/* Left Title */}
-      <div style={{width: "100%",               // full width of main area
-  padding: "40px",
-  left:0,
-  backgroundColor: "#fff",
-  borderBottom: "1px solid #ccc",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  margin: 0,
-  }}>E-Mail
-
-      {/* Right User Section */}
+        <div style={styles.header}> <b>E-Mail</b>
+          {/* Right User Section */}
       <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
         {/* Avatar */}
         <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "#333" }} />
@@ -96,6 +88,24 @@ export default function EmailPage() {
           <path d="M19 9l-7 7-7-7" />
         </svg>
       </div>
+      {/* </div> */}
+
+        </div>
+         <div style={styles.longS}>
+      {/* Left Title */}
+      <div style={{
+  //       width: "100%",               // full width of main area
+  // padding: "40px",
+  // left:0,
+  // backgroundColor: "#fff",
+  // borderBottom: "1px solid #ccc",
+  // display: "flex",
+  // justifyContent: "space-between",
+  // alignItems: "center",
+  // margin: 0,
+  }}>
+
+
       </div>
     </div>
     
@@ -121,7 +131,7 @@ export default function EmailPage() {
 
         {/* Subject */}
         <div style={styles.subjectBox}>
-          <span style={styles.autoRespondTag}>   AUTO RESPOND</span>
+          <span style={styles.autoRespondTag}> ↹↹  AUTO RESPOND</span>
           <h3 style={styles.subjectText}>Your Contract Is Started</h3>
         </div>
 
@@ -181,14 +191,14 @@ const styles = {
 
     display: "flex",
     Height: "100vh",
-    backgroundColor: "#e6e6e6ff",
+    backgroundColor: "rgba(240, 240, 240, 0.9)",
     // fontFamily: "Arial, sans-serif",
   },
 
   /* Sidebar */
   sidebar: {
     width: "250px",
-    backgroundColor: "#eef2ef",
+    backgroundColor: "#f8f8f8ff",
     paddingTop: "20px ",
     height:"100vh",
     borderRight: "1px solid #ccc",
@@ -217,19 +227,37 @@ const styles = {
   },
 
   menuHeader: {
-    // padding: "10px 15px",
     display: "flex",
-    borderRadius: "6px",
+    justifyContent: "space-between", // pushes them apart
     alignItems: "center",
-    fontWeight: "bold",
-    padding:"10px 15px",
-    // display: "inline-block",
-    background: "#29d129ff",
-    // fontWeight:"bold",
+    padding:"20px",
+    fontSize:"20px",
+    width: "90%",
+    backgroundColor: "#d4f4dd",
+    padding: "10px 15px",
+    borderBottom: "3px solid #ddd",
   },
 
-  icon: {
-    marginRight: "8px",
+  left: {
+    fontSize: "18px",
+    fontWeight: "600",
+    color:"green",
+
+  },
+
+  right: {
+    fontSize: "22px",
+    fontWeight: "bold",
+    cursor: "pointer",
+    color:"green",
+  },
+  menuTem:{
+    padding:"10px 15px",
+    cursor:"pointer",
+    color:"#444",
+    lineHeight:"1.8",
+
+
   },
 
   menuItem: {
@@ -240,11 +268,15 @@ const styles = {
   },
 
 
+
   menuItemActive: {
     padding: "10px 15px",
-    backgroundColor: "rgba(86, 235, 128, 1)",
+    backgroundColor: "#d4f4dd",
     borderRadius: "6px",
     display:"flex",
+    
+    lineHeight:"1.8",
+
     
     // marginBottom: "5px",
     fontWeight: "bold",
@@ -259,12 +291,20 @@ const styles = {
   /* Right content */
   content: {
     flex: 1,
-    padding: "30px",
+    padding: 0,
   },
 
   header: {
-    fontSize: "26px",
-    marginBottom: "20px",
+    width: "100%",
+  backgroundColor: "#fff",
+  borderBottom: "1px solid #ccc",
+  padding: "20px",
+  margin: 0,
+  display: "flex",
+  justifyContent: "space-between",   // <-- THIS CREATES SPACE IN THE MIDDLE
+  alignItems: "center",
+  fontWeight: "bold",
+  fontSize:"20px",
   },
 
   // longS:{
@@ -291,10 +331,13 @@ const styles = {
     background: "#fff",
     padding: "20px",
     height:"100vh",
-    borderRadius: "10px",
+    // borderRadius: "10px",
     marginBottom: "20px",
     marginTop:"50px",
-    boxShadow: "0 1px 3px rgba(0,0,0,0.2)",
+    margin:"20px auto",
+    marginLeft:"20px",
+    // boxShadow: "0 4px 3px ",
+    boxSizing:"border-box",
   },
 
   senderRow: {

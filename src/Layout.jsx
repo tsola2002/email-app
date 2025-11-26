@@ -26,6 +26,7 @@ export default function Layout() {
     "/companies": "Companies",
     "/mailboxes":
      "Mailboxes",
+     "/registerpage" : "RegisterPage",
     "/blocked": "Blocked E-Mail"
   };
 

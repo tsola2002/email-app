@@ -67,9 +67,10 @@ export default function LoginForm() {
 
           <Typography
             variant="body2"
-            sx={{ color: "#22A78E", cursor: "pointer" }}
+            sx={{ mt: 3, opacity: 0.7, cursor: "pointer" }}
+            onClick={() => (window.location.href = "/forgot-password")}
           >
-            Forgot password?
+            Forgot Passsword?
           </Typography>
         </Box>
 
