@@ -20,6 +20,7 @@ export default function AppRoutes() {
       <Route path="/sales" element={<EmailDashboard />} />
       <Route path="/email" element={<Companyview2 />} />
       <Route path="/users" element={<UserListContent/>} />
+      <Route path="/autorespond" element={<AutoRespond />} />
     </Routes>
   );
 }
