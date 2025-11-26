@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import Companyview2 from "./companyview2";
 import ForgotPassword from "./pages/forgotPassword";
 import CouldNotRespond from "./couldNotRespond";
+import UserListContent from "./UserList";
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
@@ -26,10 +27,11 @@ export default function AppRoutes() {
       <Route path="/email" element={<EmailDashboard />} />
       <Route path="/couldnotrespond" element={<CouldNotRespond/>}/>
       <Route path="/email" element={<Companyview2 />} />
+      <Route path="/users" element={<UserListContent/>} />
 
       {/* <Route path="/mailbox2" element={<Mailbox2 />} /> 
 
-      <Route path="/users" element={<Users />} />
+      
       <Route path="/companies" element={<Company />} />
       <Route path="/blocked" element={<Blocked />} /> */}
     </Routes>
