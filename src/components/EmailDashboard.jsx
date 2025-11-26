@@ -14,7 +14,7 @@ import {
   Pagination,
 } from "@mui/material"
 import { Search } from "@mui/icons-material"
-import Sidebar from "../sidebar" // <-- using YOUR sidebar here!
+import Sidebar from "../Sidebar" // <-- using YOUR sidebar here!
 
 export default function EmailDashboard() {
   const [selectedStatus, setSelectedStatus] = useState("all")

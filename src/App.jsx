@@ -10,8 +10,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
-      {/* <AppRoutes/> */}
-      <Layout/>
+      <AppRoutes/>
+      {/* <Layout/> */}
     </BrowserRouter>
     </>
   )
