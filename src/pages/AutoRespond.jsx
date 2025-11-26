@@ -48,7 +48,7 @@ function AutoRespond() {
 
 
        <Typography variant="h6"mb={3} fontWeight={600}>Response</Typography>
-       <Box sx={{whiteSpace:'pre-wrap'}}>
+       <Box sx={{whiteSpace:'pre-wrap'}}> 
         <Typography  sx={{mb:6}}>Dear Sales Team,</Typography>
         <Typography>I've noticed a discrepancy in the latest invoice you sent us.It appearsthat we were charged twice for the same service. Can you please look into this as soon as possible? </Typography>
         <Typography variant="h6">Thank you,</Typography>
