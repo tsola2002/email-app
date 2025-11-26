@@ -9,6 +9,7 @@ import EmailDashboard from "./components/EmailDashboard";
 import CouldNotRespond from "./CouldNotRespond";
 import Companyview2 from "./Companyview2";
 import UserListContent from "./UserList";
+import RegisterPage from "./pages/RegisterPage";
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
@@ -17,9 +18,10 @@ import UserListContent from "./UserList";
 export default function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<LoginPage />} />
+      <Route path="/test-login" element={<LoginPage />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
 
+      <Route path="/register" element={<RegisterPage />} />
       <Route path="/mailbox1" element={<Mailbox1 />} />
       <Route path="/manualrespond" element={<ManualRespond />} />
       <Route path="/couldnotrespond" element={<CouldNotRespond />} />
