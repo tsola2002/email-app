@@ -6,9 +6,13 @@ import LoginPage from "./pages/LoginPage";
 import ManualRespond from "./ManualRespond";
 import ForgotPassword from "./pages/ForgotPassword";
 import EmailDashboard from "./components/EmailDashboard";
+<<<<<<< HEAD
 import CouldNotRespond from "./CouldNotRespond";
 import Companyview2 from "./Companyview2";
+=======
+import LoginPage from "./pages/LoginPage";
 
+>>>>>>> 0b5404d2e509c44c5f46c0fac2e99cd3be10986a
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
 // … your other pages

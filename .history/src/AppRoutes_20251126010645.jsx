@@ -8,6 +8,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import EmailDashboard from "./components/EmailDashboard";
 import CouldNotRespond from "./CouldNotRespond";
 import Companyview2 from "./Companyview2";
+import LoginPage from "./pages/LoginPage";
 
 // import Mailbox2 from "./Mailbox2";
 // import Users from "./Users";
