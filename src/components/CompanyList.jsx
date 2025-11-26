@@ -26,7 +26,7 @@ function CompanyList() {
                 "&:hover": { bgcolor: "#32b37e" },
                 textTransform: "none",
                 boxShadow: 'none'
-            }}
+            }} onClick={() => {"/companyview2"}}
             >
             New Company
             </Button>
