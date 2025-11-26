@@ -19,12 +19,12 @@ export default function AppRoutes() {
       <Route path="/forgot-password" element={<ForgotPassword />} />
 
       <Route path="/mailbox1" element={<Mailbox1 />} />
-      <Route path="/manualrespond" element={<ManualRespond/>} />
+      <Route path="/manualrespond" element={<ManualRespond />} />
+      <Route path="/couldnotrespond" element={<CouldNotRespond />} />
       {/* <Route path="/mailbox1" element={<Maunally_resp/>}/> */}
 
       <Route path="/mailboxes" element={<Mailboxes />} />
       <Route path="/email" element={<EmailDashboard />} />
-      <Route path="/couldnotrespond" element={<CouldNotRespond/>}/>
       <Route path="/email" element={<Companyview2 />} />
 
       {/* <Route path="/mailbox2" element={<Mailbox2 />} /> 
