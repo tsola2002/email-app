@@ -11,7 +11,8 @@ const menuItems = [
     path: "/email",
     children: [
       { label: "Mailbox 1", path: "/mailbox1" },
-      { label: "Mailbox 2", path: "/mailbox2" }
+      { label: "Mailbox 2", path: "/mailbox2" },
+      {label: "ManualRespond", path:"/manualRespond"}
     ]
   },
   { label: "User List", path: "/users" },
@@ -28,7 +29,7 @@ function Sidebar() {
     if (location.pathname.startsWith("/mailbox")) {
       setEmailOpen(true);
     }
-  }, [location.pathname]);
+  }, [location.pathname]); 
 
   return (
     <Box >
@@ -122,7 +123,8 @@ function Sidebar() {
           height: 44,
           borderRadius: "6px",
           borderLeft: "4px solid #00BD7E",
-        }}>Log Out</ListItemButton>
+        }}>
+        Log Out</ListItemButton>
       </List>
     </Box>
   );

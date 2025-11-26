@@ -10,7 +10,7 @@ function Mailboxes() {
     const handleClose = () => setOpen(false)
     return (
         <div>
-            <Box sx={{ display: 'flex', justifyContent: 'end', mb: 2 }}><Button variant="contained" onClick={handleOpen} sx={{ backgroundColor: '#2DC4A8', width: 150, py: 1.5, borderRadius: 2 }}>New Mailbox</Button></Box>
+            <Box sx={{ display: 'flex', justifyContent: 'end', mb: 2 }}><Button variant="contained" onClick={handleOpen} sx={{ backgroundColor: '#2DC4A8', width: 150, py: 1.5, borderRadius: 2 }}>New Mailbox</Button></Box> 
             <Dialog open={open} onClose={handleClose} fullWidth={20} PaperProps={{ sx: { borderRadius: "16px" } }} >
                 <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', p: 1, pr: 3, backgroundColor: '#2DC4A8', color: 'white' }}>
                     <DialogTitle> New MailBox</DialogTitle>

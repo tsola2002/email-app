@@ -12,3 +12,4 @@ function MailPreview({ content }) {
 }
 
 export default MailPreview
+ 

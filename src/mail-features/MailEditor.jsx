@@ -18,3 +18,4 @@ function MailEditor({content, setContent}) {
 }
 
 export default MailEditor
+ 

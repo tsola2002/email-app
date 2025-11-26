@@ -80,7 +80,7 @@ function MailToolBar() {
             }}
         >
             {actions.map((a, i) => (
-                <Box
+                <Box 
                     key={i}
                     sx={{
                         cursor: "pointer",

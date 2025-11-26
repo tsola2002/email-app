@@ -10,7 +10,7 @@ import MailToolBar from './mail-features/MailToolBar';
 function MailBox1() {
   const [content, setContent] = useState("")
   return (
-    <Box >
+    <Box > 
       <Paper sx={{ mx: 2, p: 2, minHeight: '86vh' }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} >
           <Box >
